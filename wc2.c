@@ -9,7 +9,7 @@ int main() {
     int cb = 0;
     int cp = 0;
 
-	arquivo = fopen("fatorial.c", "r");
+	arquivo = fopen("freq.c", "r");
 
 	c = getc(arquivo);
     while( c != -1 )
