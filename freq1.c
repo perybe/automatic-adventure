@@ -16,7 +16,7 @@ int main()
 
     for( i = 0; i < SIZE; i++) // modifica o numero do i  somando +1 até chegar ao 9(s[i])
     {
-        printf("s[i] = 0");	//atribui o valor zero para cada s[i]
+        fscanf(arquivo,"%i", &s[i]);	//le o valor para cada s[i]
     }
 
     s['A']++;	// quando tiver o caracter A somar 1

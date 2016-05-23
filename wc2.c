@@ -2,16 +2,16 @@
 
 int main() {
 
-	FILE *arquivo;
-	int c;
+    FILE *arquivo;
+    int c;
 
     int cl = 0;
     int cb = 0;
     int cp = 0;
 
-	arquivo = fopen("freq.c", "r");
+    arquivo = fopen("freq.c", "r");
 
-	c = getc(arquivo);
+    c = getc(arquivo);
     while( c != -1 )
     {
         cb++;
@@ -20,15 +20,15 @@ int main() {
         if (c == ' ')
             cp = cp + 1;
 
-		printf("%i %c %x\n", c, c, c);
-		c = getc(arquivo);
-	}
+        printf("%i %c %x\n", c, c, c);
+        c = getc(arquivo);
+    }
 
     printf("L=%i P=%i B=%i\n", cl, cp, cb);
 
 
-	fclose(arquivo);
+    fclose(arquivo);
 
 
-	return 0;
+    return 0;
 }
