@@ -3,7 +3,7 @@
 
 void troca(float*,float*);
 
-void troca(float* a, float* b) //ponteiros
+void troca(float* a, float* b) //ponteiros para os valore de x e y
 {
 
 	float tmp;
