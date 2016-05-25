@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main ()
 {
@@ -8,14 +9,9 @@ int main ()
 	int n2;
 	int maiorValor;
 	int menorValor;
-	int soma = 0;
-	char t[50];
+	int soma = 0;	
 
-
-	scanf("%s", t);
-	
-
-	arquivo = fopen("t", "r");
+	arquivo = fopen("arq.txt", "r");
 
 	while(!feof(arquivo))
 	{
@@ -34,12 +30,12 @@ int main ()
 			
 			soma = soma + menorValor;
 
-			printf("O maior valor foi %i", maiorValor);
+			printf("O maior valor foi %i\n", maiorValor);
 
 		}
 	}
 	
-	printf("a soma foi %i", soma);
+	printf("a soma foi %i\n", soma);
 	
 	fclose(arquivo);
 
