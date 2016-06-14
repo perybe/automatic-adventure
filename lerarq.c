@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
+int main (int argc, char argv[])
 {
 
 	FILE *arquivo;
@@ -11,7 +11,7 @@ int main ()
 	int menorValor;
 	int soma = 0;	
 
-	arquivo = fopen("arq.txt", "r");
+	arquivo = fopen("argv[1]", "r");
 
 	while(!feof(arquivo))
 	{
